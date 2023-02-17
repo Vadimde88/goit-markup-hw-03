@@ -39,6 +39,12 @@ a,
 	text-decoration: none;
 }
 
+.container {
+	width: 1128px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .current {
 	color: var(--accent-color);
 }

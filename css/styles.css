@@ -30,6 +30,7 @@ button {
 /*header-container*/
 header {
 	background-color: var(--main-background-color);
+	border-bottom: 1px solid var(--light-text-color);
 }
 
 ul,
@@ -39,10 +40,31 @@ a,
 	text-decoration: none;
 }
 
+ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	display: block;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	width: 1128px;
 	padding-left: 15px;
 	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .current {
@@ -50,6 +72,19 @@ a,
 }
 
 /*navigation-container*/
+.nav-bar {
+	display: flex;
+	align-items: center;
+}
+
+.navigation-links li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.nav-tel {
+	margin-left: 40px;
+}
+
 .nav-logo-title,
 .footer-logo-title {
 	font-family: Raleway, sans-serif;
@@ -64,6 +99,7 @@ a,
 
 .nav-logo-title {
 	color: var(--text-color);
+	margin-right: 76px;
 }
 
 .footer-logo-title {
@@ -75,16 +111,16 @@ a,
 	font-weight: 500;
 	font-size: 16px;
 	text-decoration: none;
-}
-
-.navigation-links,
-.nav-link {
 	color: var(--text-color);
 }
 
 .navigation-contacts,
 .contacts {
 	color: var(--sec-text-color);
+}
+
+.navigation-links {
+	padding: 24px 0;
 }
 
 .nav-link:focus,

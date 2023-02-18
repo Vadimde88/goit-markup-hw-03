@@ -296,10 +296,19 @@ h1 {
 	background-color: var(--dark-background-color);
 }
 
+.footer-logo-container {
+	width: 264px;
+}
+
 .studio-footer {
 	color: var(--sec-background-color);
 }
 
+.footer-logo-title {
+	margin-bottom: 16px;
+}
+
 .footer-text {
+	margin: 0;
 	color: var(--light-text-color);
 }
